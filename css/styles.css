@@ -4,6 +4,7 @@
 }
 
 body {
+	height: 100vh;
 	position: relative;
 	background-color: #f2f2f2;
 	font-family: 'MuseoModerno', cursive;
@@ -50,6 +51,8 @@ main {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
 	grid-template-rows: repeat(4, minmax(60px, 160px));
+	max-width: 1500px;
+	margin: auto;
 }
 
 .person-card {
@@ -123,3 +126,11 @@ main {
 	width: 30px;
 	cursor: pointer;
 }
+
+/* ------------------- MEDIA QUERIES -------------------------------1024---- */
+/* ------------------------------------------------------------------------ */
+@media (min-width: 1024px) {
+	main {
+		margin-top: 15vh;
+	}
+	}
